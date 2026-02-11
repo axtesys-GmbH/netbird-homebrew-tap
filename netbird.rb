@@ -11,7 +11,7 @@ class Netbird < Formula
   on_macos do
     on_intel do
       url "https://github.com/axtesys-GmbH/netbird/releases/download/v0.64.5-axt/netbird_0.64.5-axt_darwin_amd64.tar.gz", using: CurlDownloadStrategy
-      sha256 "1663033407fc234d391b263c2b464abfadf1c3f1346ceb823521e18a47716fa8"
+      sha256 "c386f614dfeb9066b494925aeee521b584b4e7a731469ac7d6b73293cbec5cb8"
 
       def install
         bin.install "netbird"
@@ -19,7 +19,7 @@ class Netbird < Formula
     end
     on_arm do
       url "https://github.com/axtesys-GmbH/netbird/releases/download/v0.64.5-axt/netbird_0.64.5-axt_darwin_arm64.tar.gz", using: CurlDownloadStrategy
-      sha256 "23066654f590a122440f7e5aba74a0a78a42a396ead1fd99fa3441e9db219954"
+      sha256 "2c67d2e4e5b955802a83c5a91c16dc8c724dfb64cbebd0a35e0853464ef03f72"
 
       def install
         bin.install "netbird"
@@ -31,7 +31,7 @@ class Netbird < Formula
     on_intel do
       if Hardware::CPU.is_64_bit?
         url "https://github.com/axtesys-GmbH/netbird/releases/download/v0.64.5-axt/netbird_0.64.5-axt_linux_amd64.tar.gz", using: CurlDownloadStrategy
-        sha256 "e6f0a08fee0eb60c3a7e3f6166719bf4d97713906dc25ac590e7db35ea6b8500"
+        sha256 "cb5d52945768e668fa584172f864a44208d8d85ef1719ca38fcc33639d56b5e1"
 
         def install
           bin.install "netbird"
@@ -41,7 +41,7 @@ class Netbird < Formula
     on_arm do
       if !Hardware::CPU.is_64_bit?
         url "https://github.com/axtesys-GmbH/netbird/releases/download/v0.64.5-axt/netbird_0.64.5-axt_linux_armv6.tar.gz", using: CurlDownloadStrategy
-        sha256 "6aa6dbe9e36f9d7c92bf6b6d4c04c0fae9cf101c266ba24bb01c1437b6f00859"
+        sha256 "85174846b1a2dd147674299ff4cc396173512ad2702e3130f612ed2f3da3831a"
 
         def install
           bin.install "netbird"
@@ -51,7 +51,7 @@ class Netbird < Formula
     on_arm do
       if Hardware::CPU.is_64_bit?
         url "https://github.com/axtesys-GmbH/netbird/releases/download/v0.64.5-axt/netbird_0.64.5-axt_linux_arm64.tar.gz", using: CurlDownloadStrategy
-        sha256 "b0c865187f2926b24534d7e9533be44aaf24cfc373740b08244d1a8ee84cc91b"
+        sha256 "715d242b78c184a0a5ce45a88ed344e08832b4e7cba6e809df1aa6ebbbff0157"
 
         def install
           bin.install "netbird"
