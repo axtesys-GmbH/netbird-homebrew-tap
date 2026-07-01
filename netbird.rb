@@ -5,21 +5,21 @@
 class Netbird < Formula
   desc "Netbird project."
   homepage "https://netbird.io/"
-  version "0.73.2-axt"
+  version "0.74.0-axt"
   license "BSD3"
 
   on_macos do
     if Hardware::CPU.intel?
-      url "https://github.com/axtesys/netbird/releases/download/v0.73.2-axt/netbird_0.73.2-axt_darwin_amd64.tar.gz", using: CurlDownloadStrategy
-      sha256 "09229c6d92b054ee9a777ecb8f9d00d147e234cb61931c79f65ee22ce32add50"
+      url "https://github.com/axtesys/netbird/releases/download/v0.74.0-axt/netbird_0.74.0-axt_darwin_amd64.tar.gz", using: CurlDownloadStrategy
+      sha256 "2d30dca28b08513776a2adfe335586f9939dee5a17e2747ab08e5bd7e38b1c1a"
 
       define_method(:install) do
         bin.install "netbird"
       end
     end
     if Hardware::CPU.arm?
-      url "https://github.com/axtesys/netbird/releases/download/v0.73.2-axt/netbird_0.73.2-axt_darwin_arm64.tar.gz", using: CurlDownloadStrategy
-      sha256 "d64e2c17e5690a008d8a7264226922f6ce4438a78f7bcf0688cff87356cf6bc3"
+      url "https://github.com/axtesys/netbird/releases/download/v0.74.0-axt/netbird_0.74.0-axt_darwin_arm64.tar.gz", using: CurlDownloadStrategy
+      sha256 "379c9496d66ef72a163fff771974be55b3758da0d9247eadcef1ba75db9d8bc8"
 
       define_method(:install) do
         bin.install "netbird"
@@ -29,22 +29,22 @@ class Netbird < Formula
 
   on_linux do
     if Hardware::CPU.intel? && Hardware::CPU.is_64_bit?
-      url "https://github.com/axtesys/netbird/releases/download/v0.73.2-axt/netbird_0.73.2-axt_linux_amd64.tar.gz", using: CurlDownloadStrategy
-      sha256 "0d827201d8cf65b946d07e616e973d87cdcdfe75d25a7c619a95ef9ed1d2ca3b"
+      url "https://github.com/axtesys/netbird/releases/download/v0.74.0-axt/netbird_0.74.0-axt_linux_amd64.tar.gz", using: CurlDownloadStrategy
+      sha256 "79ee1a291ca80feb32cc72cc6bf46fc42b4370efccb805ecc9bb00f65249a9ec"
       define_method(:install) do
         bin.install "netbird"
       end
     end
     if Hardware::CPU.arm? && !Hardware::CPU.is_64_bit?
-      url "https://github.com/axtesys/netbird/releases/download/v0.73.2-axt/netbird_0.73.2-axt_linux_armv6.tar.gz", using: CurlDownloadStrategy
-      sha256 "11c03dc0355c9859b1ec56f354f08fd20505e075d2aaf730d9757e1901feaa27"
+      url "https://github.com/axtesys/netbird/releases/download/v0.74.0-axt/netbird_0.74.0-axt_linux_armv6.tar.gz", using: CurlDownloadStrategy
+      sha256 "06fa1fc13f8df5c1e76b589151ada4fe576ac9a2c25d8639848327cbd93ea548"
       define_method(:install) do
         bin.install "netbird"
       end
     end
     if Hardware::CPU.arm? && Hardware::CPU.is_64_bit?
-      url "https://github.com/axtesys/netbird/releases/download/v0.73.2-axt/netbird_0.73.2-axt_linux_arm64.tar.gz", using: CurlDownloadStrategy
-      sha256 "bde66317e7e3f543e6b26d629d70beb9ef205f3ae6f86f4bdb218ba9de9812ae"
+      url "https://github.com/axtesys/netbird/releases/download/v0.74.0-axt/netbird_0.74.0-axt_linux_arm64.tar.gz", using: CurlDownloadStrategy
+      sha256 "867084a80d6efce029ec063b06ea7c494860245b3086f6125561d3ea62a08d0a"
       define_method(:install) do
         bin.install "netbird"
       end
