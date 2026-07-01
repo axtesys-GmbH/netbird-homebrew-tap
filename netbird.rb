@@ -11,7 +11,7 @@ class Netbird < Formula
   on_macos do
     if Hardware::CPU.intel?
       url "https://github.com/axtesys/netbird/releases/download/v0.73.2-axt/netbird_0.73.2-axt_darwin_amd64.tar.gz", using: CurlDownloadStrategy
-      sha256 "50b8a6ad653da80079072c6877e256aa55033f3ec6b990cf630974ebfb32f45a"
+      sha256 "09229c6d92b054ee9a777ecb8f9d00d147e234cb61931c79f65ee22ce32add50"
 
       define_method(:install) do
         bin.install "netbird"
@@ -19,7 +19,7 @@ class Netbird < Formula
     end
     if Hardware::CPU.arm?
       url "https://github.com/axtesys/netbird/releases/download/v0.73.2-axt/netbird_0.73.2-axt_darwin_arm64.tar.gz", using: CurlDownloadStrategy
-      sha256 "7e1844f4a5433d35ffdbe2b824d67fb496890dc1d18cf0baa75f4a724bc9e13d"
+      sha256 "d64e2c17e5690a008d8a7264226922f6ce4438a78f7bcf0688cff87356cf6bc3"
 
       define_method(:install) do
         bin.install "netbird"
@@ -30,21 +30,21 @@ class Netbird < Formula
   on_linux do
     if Hardware::CPU.intel? && Hardware::CPU.is_64_bit?
       url "https://github.com/axtesys/netbird/releases/download/v0.73.2-axt/netbird_0.73.2-axt_linux_amd64.tar.gz", using: CurlDownloadStrategy
-      sha256 "29d4b844912acdc8fb26f284e1ebcaf7edb66cbe98fd3a6e0817d1afb05a4362"
+      sha256 "0d827201d8cf65b946d07e616e973d87cdcdfe75d25a7c619a95ef9ed1d2ca3b"
       define_method(:install) do
         bin.install "netbird"
       end
     end
     if Hardware::CPU.arm? && !Hardware::CPU.is_64_bit?
       url "https://github.com/axtesys/netbird/releases/download/v0.73.2-axt/netbird_0.73.2-axt_linux_armv6.tar.gz", using: CurlDownloadStrategy
-      sha256 "8cbacb35bc561f9bdbf90d5f6b3921b657f3ff8308330e436c3ba64b9c3522b2"
+      sha256 "11c03dc0355c9859b1ec56f354f08fd20505e075d2aaf730d9757e1901feaa27"
       define_method(:install) do
         bin.install "netbird"
       end
     end
     if Hardware::CPU.arm? && Hardware::CPU.is_64_bit?
       url "https://github.com/axtesys/netbird/releases/download/v0.73.2-axt/netbird_0.73.2-axt_linux_arm64.tar.gz", using: CurlDownloadStrategy
-      sha256 "e4439d3c8543955d123cf22560d1f47c37feb3943029f243422db5e2ad8c59e5"
+      sha256 "bde66317e7e3f543e6b26d629d70beb9ef205f3ae6f86f4bdb218ba9de9812ae"
       define_method(:install) do
         bin.install "netbird"
       end
