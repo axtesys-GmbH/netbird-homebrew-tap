@@ -3,15 +3,15 @@
 # upstream SIGNED macOS UI matching our -axt release. Do not edit by
 # hand; changes are overwritten on the next release.
 cask "netbird-ui" do
-  version "0.74.0"
+  version "0.74.2"
 
   if Hardware::CPU.intel?
       url "https://github.com/netbirdio/netbird/releases/download/v#{version}/netbird-ui_#{version}_darwin_amd64_signed.zip"
-      sha256 "b9c749ec8a2fc0d342fe3d95b5b78811d7f63be7fccfe84a0c6796ba8fe8546e"
+      sha256 "94d70efb9208af0efe73db3c7e96c776554143d3b9898e13cc30986bec3bebad"
       app "netbird_ui_darwin", target: "Netbird UI.app"
   else
       url "https://github.com/netbirdio/netbird/releases/download/v#{version}/netbird-ui_#{version}_darwin_arm64_signed.zip"
-      sha256 "b4e8f72411ee9c5fdf426de46e1aeac87b188f59a810d790f53ba65a704166b5"
+      sha256 "d0adf0d473c6083e6fca912599ae4d4b9e5e8f12761966e9601acb93f26ba732"
       app "netbird_ui_darwin", target: "Netbird UI.app"
   end
 
